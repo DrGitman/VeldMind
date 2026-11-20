@@ -1,0 +1,66 @@
+# ---------- Secrets ----------
+.env
+.env.*
+!env.example
+secrets/
+*.pem
+*.key
+*.jks
+*.keystore
+google-services.json
+GoogleService-Info.plist
+key.properties
+
+# ---------- Local notes ----------
+sweep_*.txt
+
+# ---------- OS / editors ----------
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.iml
+*.swp
+
+# ---------- Flutter / Dart ----------
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+**/android/.gradle/
+**/android/local.properties
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/Generated.xcconfig
+coverage/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# ---------- Node ----------
+node_modules/
+npm-debug.log*
+
+# ---------- Supabase ----------
+supabase/.branches/
+supabase/.temp/
+
+# ---------- ML ----------
+ml/runs/
+ml/datasets/
+*.pt
+!ml/models/*.tflite
+
+# ---------- Firmware ----------
+.pio/

@@ -1,0 +1,21 @@
+# CODEOWNERS · VeldMind
+# GitHub asks these people to review pull requests that touch these folders.
+# Replace the usernames below with each team member's GitHub username.
+#   TEAM_LEAD      = team lead
+#   TECH_LEAD      = technical lead
+#   FRONTEND_DEV   = frontend developer
+#   QA_LEAD        = QA lead
+#   BACKEND_DEV_1  = backend developer 1 (satellite & AI)
+#   BACKEND_DEV_2  = backend developer 2 (IoT, alerts & SMS)
+# Until then, everything goes to the repo owner.
+
+*               @DrGitman
+
+/app/           @DrGitman
+/api/           @DrGitman
+/gateway/       @DrGitman
+/firmware/      @DrGitman
+/supabase/      @DrGitman
+/ml/            @DrGitman
+/docs/          @DrGitman
+/.github/       @DrGitman
