@@ -1,21 +1,37 @@
 # CODEOWNERS · VeldMind
 # GitHub asks these people to review pull requests that touch these folders.
-# Replace the usernames below with each team member's GitHub username.
-TEAM_LEAD      = @DrGitman
-TECH_LEAD      = @Israel-Shingenge
-FRONTEND_DEV   = @Tuilika
-QA_LEAD        = @Avril-coder
-BACKEND_DEV_1  = @Doomstorm-coder
-BACKEND_DEV_2  = @MiluSimau
-# Until then, everything goes to the repo owner.
+# When several rules match a file, the LAST matching rule wins.
+#
+# Team
+#   Team lead           DrGitman
+#   Technical lead      Israel-Shingenge
+#   Frontend dev        Tuilika
+#   QA lead             Avril-coder
+#   Backend dev 1       Doomstorm-coder   (satellite & AI)
+#   Backend dev 2       MiluSimau         (IoT, alerts & SMS)
 
+# Anything not listed below
 *               @DrGitman
 
-/app/           @DrGitman
-/api/           @DrGitman
-/gateway/       @DrGitman
-/firmware/      @DrGitman
-/supabase/      @DrGitman
-/ml/            @DrGitman
-/docs/          @DrGitman
-/.github/       @DrGitman
+# Flutter app
+/app/           @Tuilika @Israel-Shingenge
+
+# Backend API
+/api/           @Doomstorm-coder @MiluSimau
+
+# Farm gateway and collar firmware
+/gateway/       @Israel-Shingenge @MiluSimau
+/firmware/      @Israel-Shingenge @MiluSimau
+
+# Database and security rules
+/supabase/      @Israel-Shingenge
+
+# Herd count model
+/ml/            @Doomstorm-coder
+
+# Docs and tests
+/docs/          @DrGitman @Avril-coder
+
+# Repo settings, workflows and this file
+/.github/       @DrGitman @Israel-Shingenge
+/CODEOWNERS     @DrGitman
