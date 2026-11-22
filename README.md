@@ -77,20 +77,24 @@ Some of these folders will be added as the build goes on.
 
 - `main` holds the **final product** only.
 - `dev` is where all work comes together.
-- Every task gets its own **short-lived** branch from `dev`, for example `feature/VM-41-fence-editor`.
-- Branches merge back into `dev` through a pull request.
+- Every task starts with a GitHub issue, then gets its own **short-lived** branch from `dev`, for example `feature/VM-41-fence-editor` for issue #41.
+- Branches merge back into `dev` through a pull request that says `Closes #41`. The issue closes and the branch is deleted automatically.
 - When the product is ready, `dev` is merged into `main`.
 
 ## Team KIAMSO
 
-| Role | Focus |
-|---|---|
-| Team lead | Product, research, pitch |
-| Technical lead | Architecture, gateway, database |
-| Frontend developer | Flutter app |
-| QA lead | Testing and field trials |
-| Backend developer 1 | Satellite data and AI |
-| Backend developer 2 | IoT, alerts and SMS |
+| Role | GitHub | Focus |
+|---|---|---|
+| Team lead | [DrGitman](https://github.com/DrGitman) | Product, research, pitch |
+| Technical lead | [Israel-Shingenge](https://github.com/Israel-Shingenge) | Architecture, gateway, database |
+| Frontend developer | [Tuilika](https://github.com/Tuilika) | Flutter app |
+| QA lead | [Avril-coder](https://github.com/Avril-coder) | Testing and field trials |
+| Backend developer 1 | [Doomstorm-coder](https://github.com/Doomstorm-coder) | Satellite data and AI |
+| Backend developer 2 | [MiluSimau](https://github.com/MiluSimau) | IoT, alerts and SMS |
+
+## Timeline
+
+Development runs from **23 November to 2 December 2026** in four short sprints. Code freeze is Tuesday 1 December at 18:00. The final version is merged into `main` on Wednesday 2 December.
 
 ## License
 
