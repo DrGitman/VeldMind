@@ -54,6 +54,8 @@ veldmind/
 ├─ firmware/   Collar firmware (ESP32)
 ├─ supabase/   Database migrations and security rules
 ├─ ml/         Herd count model training
+├─ contracts/  Shared API spec, data formats and mock data
+├─ tests/      End to end and contract tests
 └─ docs/       Notes, images and decisions
 ```
 
@@ -80,6 +82,10 @@ Some of these folders will be added as the build goes on.
 - Every task starts with a GitHub issue, then gets its own **short-lived** branch from `dev`, for example `feature/VM-41-fence-editor` for issue #41.
 - Branches merge back into `dev` through a pull request that says `Closes #41`. The issue closes and the branch is deleted automatically.
 - When the product is ready, `dev` is merged into `main`.
+
+## How we work
+
+Everyone builds their own part against shared contracts and mock data, so nobody waits for anyone. The team lead merges the work and joins all the parts on 30 November to 1 December, then we test the whole app together. Details are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Team KIAMSO
 
