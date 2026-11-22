@@ -26,6 +26,12 @@
 # Database and security rules
 /supabase/      @Israel-Shingenge
 
+# Shared contracts: changes need the technical lead and team lead
+/contracts/     @Israel-Shingenge @DrGitman
+
+# Tests
+/tests/         @Avril-coder
+
 # Herd count model
 /ml/            @Doomstorm-coder
 
