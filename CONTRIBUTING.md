@@ -18,7 +18,9 @@ fix/VM-63-sync-retry
 docs/VM-70-setup-guide
 ```
 
-Keep branches short-lived: aim to merge within 1 to 3 days. Delete the branch after it is merged.
+`VM-41` means GitHub issue **#41**. Every branch needs an open issue first.
+
+Keep branches short-lived: aim to merge within 1 to 2 days. GitHub deletes the branch for you after it is merged.
 
 ## 2. Day to day steps
 
@@ -65,7 +67,7 @@ docs(readme): add setup steps
 
 Before you ask for a review, check that:
 
-- [ ] The PR links to an issue (VM-xx)
+- [ ] The description says `Closes #41` (your issue number). This closes the issue when the PR is merged. The PR checks fail without it.
 - [ ] UI changes include a screenshot or a short clip
 - [ ] Tests are added or updated
 - [ ] App changes work with no internet
