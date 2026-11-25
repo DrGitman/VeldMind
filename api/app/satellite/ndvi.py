@@ -24,9 +24,11 @@ def calculate_ndvi(nir: np.ndarray, red: np.ndarray) -> np.ndarray:
     ndvi = np.full(nir.shape, np.nan, dtype=np.float32)
 
     valid_pixels = (
-        np.isfinite(nir)
-        & np.isfinite(red)
-        & (denominator != 0)
+    np.isfinite(nir)
+    & np.isfinite(red)
+    & (nir >= 0)
+    & (red >= 0)
+    & (denominator > 0)
     )
 
     np.divide(

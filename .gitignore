@@ -64,3 +64,6 @@ ml/datasets/
 
 # ---------- Firmware ----------
 .pio/
+
+# ---------- Satellite imagery (local data) ----------
+api/data/
